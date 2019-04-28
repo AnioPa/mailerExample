@@ -61,7 +61,7 @@ app.post('/sendmail', (req, res) => {
       to: "kazik@kazikkoduje.pl", // list of receivers
       subject: "Hello ✔" , // Subject line
       text: "Hi", // plain text body
-      html: `<p>${req.body.message}</p>`// html body
+      html: `<p>${req.body.message}</p><p>${req.body.email}</p>`// html body
     };
 
     // send mail with defined transport object
